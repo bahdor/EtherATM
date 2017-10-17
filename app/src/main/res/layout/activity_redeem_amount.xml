@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.oliver352.etheratm.activities.RedeemAmountActivity">
+
+    <LinearLayout
+        android:id="@+id/amount_form_layout"
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        android:weightSum="1"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="18dp">
+
+        <TextView
+            android:id="@+id/redeem_amount_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dip"
+            android:layout_weight="0.06"
+            android:text="TextView"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp"
+            tools:text="Redeem Amount"/>
+
+        <RelativeLayout
+            android:id="@+id/redeem_amount_layout"
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <TextView
+                android:id="@+id/ethers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="50dip"
+                android:layout_marginTop="28dp"
+                android:text="ETH"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/amount_input_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ethers">
+
+
+                <EditText
+                    android:id="@+id/input_amount"
+                    android:layout_width="283dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/ethers"
+                    android:layout_alignBottom="@+id/ethers"
+
+                    android:ems="10"
+                    android:hint="Amount"
+                    android:inputType="numberDecimal"
+                    tools:layout_editor_absoluteX="85dp"
+                    tools:layout_editor_absoluteY="71dp"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/available_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <TextView
+                android:id="@+id/available_balance_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="Available Balance "
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp"/>
+
+            <TextView
+                android:id="@+id/available_balance_num"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/available_balance_text"
+                android:layout_toRightOf="@+id/available_balance_text"
+                android:text="Balance "/>
+
+            <TextView
+                android:id="@+id/ether_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/available_balance_num"
+                android:text="ETH"/>
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_alignParentTop="true"-->
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/confirm_amount_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp"/>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

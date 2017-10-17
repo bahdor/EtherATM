@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">EtherATM</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+
+
+    <string name="remember_password">Remember</string>
+    <string name="action_auto_login">Auto Login</string>
+
+    <string name="text_email">Email</string>
+
+    <string name="text_not_member">New User? Create One</string>
+
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_register">Register</string>
+    <string name="action_forget_password">Forget Password</string>
+    <string name="action_sign_up">Sign Up</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+
+    <string name="action_submit">Submit</string>
+
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_givers_maps">Map</string>
+</resources>
